@@ -1,0 +1,21 @@
+Step 1: start
+Step 2: Upload the picture of the leaf
+Step 3: If the input leaf is valid go to step 4
+Step 4:  -Performs convolution operation that is x=filter(input_leaf)
+	      -calculate the relu activation function: y=max (0, x)
+Step 5: if the activation function value is "zero" the input leaf represents a healthy leaf     go to step 10.
+Step 6: if the activation function value is "positive" the input leaf represents an   unhealthy leaf go to step7.else if(y==positive)
+Step 7:perform max pooling and go to step 8
+           Max pooling is a pooling operation that selects the maximum element from the         
+          region of the feature map covered by the filter.
+Step 8:Performs average pooling and go to step 9.
+The average of the items in the feature map area that the filter is covering are calculated using average pooling.
+Step 9:  -Calculate SoftMax function:
+	       The softmax function is used to classify or split the data.
+	       If the output label matches the label in the database
+		-Return respective content of that label like disease name, recommend 		fertilizers go to step 11. 
+	       Else Return if disease is not found go to step 11.
+Step 10: return leaf name and condition as healthy.
+Step 11: stop.
+
+
