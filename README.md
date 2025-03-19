@@ -48,62 +48,68 @@ Efficient water management is crucial for sustainable agriculture. This project 
 
 ## Installation
 
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/kartikeya-datta/Automatic_Irrigation.git](https://www.google.com/search?q=https://github.com/kartikeya-datta/Automatic_Irrigation.git)
-   cd Automatic_Irrigation
-Install Required Libraries:
+## Clone the Repository:
+```bash
+git clone https://github.com/kartikeya-datta/Automatic_Irrigation.git
+cd Automatic_Irrigation
+```
 
-For the microcontroller firmware, install the necessary libraries for your microcontroller platform (e.g., Arduino IDE libraries).
-For the data logging and machine learning scripts, install the required Python packages using pip:
-Bash
-
+## Install Required Libraries:
+1. For the microcontroller firmware, install the necessary libraries for your microcontroller platform (e.g., Arduino IDE libraries).
+2. For the data logging and machine learning scripts, install the required Python packages using pip:
+```bash
 pip install -r requirements.txt
-Connect Hardware Components:
+```
 
+## Connect Hardware Components:
 Follow the wiring diagram provided in the repository to connect the sensors, relay module, and water pump to the microcontroller.
-Upload Firmware to Microcontroller:
 
+## Upload Firmware to Microcontroller:
 Open the microcontroller firmware in the Arduino IDE (or your platform's IDE) and upload it to the microcontroller.
-Set Up Data Logging:
 
+## Set Up Data Logging:
 Configure the data logging script to store sensor data in your preferred format (e.g., CSV, database).
-Train the Machine Learning Model (Optional):
 
+## Train the Machine Learning Model (Optional):
 If you want to use machine learning for irrigation optimization, collect sensor data for a period of time and train the model using the provided scripts.
-Usage
-Power On the System:
 
+## Usage
+
+### Power On the System:
 Connect the power supply to the system.
-Monitor Sensor Data:
 
+### Monitor Sensor Data:
 Observe the sensor readings through the microcontroller's serial monitor or the data logging output.
-Automatic Irrigation:
 
+### Automatic Irrigation:
 The system will automatically trigger irrigation when the soil moisture level falls below the predefined threshold or based on the machine learning model's prediction.
-Manual Control (Optional):
 
+### Manual Control (Optional):
 If a user interface is implemented, use it to manually control the irrigation system.
-Data Collection
-Collect sensor data (soil moisture, temperature, humidity) at regular intervals.
-Store the data in a structured format (e.g., CSV, database).
-Ensure the data is labeled with the corresponding irrigation actions (if applicable).
-Use the collected data to train and evaluate the machine learning model.
-Machine Learning Model
-The repository may include pre-trained machine learning models or scripts for training your own models.
-The model can be used to predict soil moisture levels or optimize irrigation schedules.
+
+## Data Collection
+1. Collect sensor data (soil moisture, temperature, humidity) at regular intervals.
+2. Store the data in a structured format (e.g., CSV, database).
+3. Ensure the data is labeled with the corresponding irrigation actions (if applicable).
+4. Use the collected data to train and evaluate the machine learning model.
+
+## Machine Learning Model
+The repository may include pre-trained machine learning models or scripts for training your own models. The model can be used to predict soil moisture levels or optimize irrigation schedules.
+
 Consider using algorithms such as regression (e.g., linear regression, polynomial regression) or time series forecasting (e.g., ARIMA, LSTM) depending on the complexity of your data and requirements.
+
 Evaluate the model's performance using appropriate metrics (e.g., mean squared error, R-squared).
-Contributing
+
+## Contributing
 Contributions are welcome! If you have any ideas, bug fixes, or improvements, please submit a pull request.
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Make your changes and commit them.   
-Submit a pull request.   
-License
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Submit a pull request.
+
+## License
 This project is licensed under the MIT License.
 
-Acknowledgments
-Thanks to the open-source community for providing valuable resources and libraries.   
-Special thanks to the developers of the Arduino platform and the Python libraries used in this project.
+## Acknowledgments
+Thanks to the open-source community for providing valuable resources and libraries. Special thanks to the developers of the Arduino platform and the Python libraries used in this project.
